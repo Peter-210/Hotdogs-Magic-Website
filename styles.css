@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --global-left-right-padding: 20%;
+    --background-color: #24252a;
+    --primary-font-color: #edf0f1;
+    --section-gap: 180px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-font-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+iframe {
+    border: none;
+    width: 560px;
+    height: 315px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: 20px;
+    padding: 0 25px;
+}
+
+a:hover {
+    filter: brightness(70%);
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.align-col {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    font-weight: 500;
+    padding: 0 var(--global-left-right-padding);
+    padding-bottom: var(--section-gap);
+}
+
+li,
+a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    width: 80px;
+}
+
+.nav-logo .nav-title {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-link li {
+    display: inline-block;
+    padding: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.nav-subtitle {
+    font-size: 25px;
+}
+
+section .row {
+    padding: 0 var(--global-left-right-padding);
+    padding-bottom: var(--section-gap);
+}
+
+.title-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.title-bar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-bar div h1 {
+    font-size: 30px;
+}
+
+.title-bar div h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.center-title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+    grid-auto-rows: auto;
+    grid-gap: 60px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-button {
+    font-size: 30px;
+    border: 2px solid var(--primary-font-color);
+    padding: 10px 40px;
+}
+
+.project-button:hover {
+    filter: brightness(70%);
+}
+
+#download .row {
+    padding: 0 var(--global-left-right-padding);
+    padding-bottom: var(--section-gap);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.back-to-top {
+    z-index: 10;
+    position: fixed;
+    bottom: 60px;
+    right: 80px;
+    width: 60px;
+    height: 60px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-top:hover {
+    filter: brightness(70%);
+}
+
+.top-logo {
+    width: 20px;
+    height: 20px;
+    border: solid #ffffff;
+    border-width: 5px 5px 0 0;
+    transform: translateY(3px) rotate(-45deg);
+}
+
+@media only screen and (max-width: 1810px) {
+    :root {
+        --global-left-right-padding: 10%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-subtitle {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .align-col {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    p {
+        padding: 0;
+    }
+}
