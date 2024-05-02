@@ -141,34 +141,11 @@ a:hover {
     color: var(--primary-font-color);
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 0;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.nav-logo img {
-    width: 80px;
-}
-
-.nav-logo .nav-title {
-    font-size: 25px;
-}
-
 nav {
     display: flex;
-}
-
-.nav-link li {
-    display: inline-block;
-    padding: 0;
+    justify-content: center;
+    padding: 100px 0;
+    padding-bottom: 100px;
 }
 
 .nav-link {
@@ -177,8 +154,10 @@ nav {
     gap: 80px;
 }
 
-.nav-subtitle {
-    font-size: 25px;
+.nav-link li {
+    display: inline-block;
+    padding: 0;
+    font-size: 20px;
 }
 
 section .row {
@@ -246,7 +225,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 0;
+    padding-bottom: 100px;
 }
 
 .back-to-top {
