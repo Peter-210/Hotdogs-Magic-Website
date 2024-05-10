@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.youtube.com/iframe_api"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/magic_wand.png">
     <title>Hotdogs & Magic</title>
@@ -24,7 +25,7 @@
 
     <header class="container-fluid">
         <div class="row">
-            <div class="title-bar col-12">
+            <div class="website-title title-bar col-12">
                 <h1>Hotdogs & Magic</h1>
             </div>
         </div>
@@ -33,7 +34,7 @@
     <section class="container-fluid" id="download">
         <div class="row">
             <div class="title-bar col-12">
-                <a href="https://github.com/Peter-210/Hotdogs-Magic-VR" target="_blank" class="project-button">
+                <a target="_blank" class="project-button" id="project-link">
                     Download - Link to GitHub
                 </a>
             </div>
@@ -45,18 +46,10 @@
             <div class="col-6">
                 <h2>About</h2>
                 <p>
-                    Hotdogs & Magic is a VR game where you use a wand to cast spells and duel against the evil hotdog
-                    wizard. Have fun as you shoot projectiles from your wand, duck behind crate boxes for cover and slay
-                    the wizard once and for all.
+                    Hotdogs & Magic is a VR game where you use a wand to cast spells and duel against the evil hotdog wizard. Have fun as you shoot projectiles from your wand, duck behind crate boxes for cover and slay the wizard once and for all.
                 </p>
             </div>
-            <div class="col-6 video-center">
-                <iframe src="https://www.youtube.com/embed/YL8YKeyOaFU" title="Hotdogs &amp; Magic - Demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a href="https://youtu.be/YL8YKeyOaFU?feature=shared" target="_blank">Link to Video
-                    Demo</a>
-            </div>
+            <div class="col-6 video-center" id="youtube-demo"></div>
         </div>
     </section>
 
@@ -65,13 +58,7 @@
             <div class="col-12 center-title">
                 <h2>Tutorial</h2>
             </div>
-            <div class="col-12 video-center">
-                <iframe src="https://www.youtube.com/embed/9b0RasUp2wA" title="Hotdogs &amp; Magic - Tutorial"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a href="https://youtu.be/9b0RasUp2wA?feature=shared" target="_blank">Link to Tutorial
-                    Video</a>
-            </div>
+            <div class="col-12 video-center" id="youtube-tutorial"></div>
         </div>
     </section>
 
@@ -116,6 +103,8 @@
     <a class="back-to-top" href="#home">
         <div class="top-logo"></div>
     </a>
+
+    <script src="script.js"></script>
 
 </body>
 

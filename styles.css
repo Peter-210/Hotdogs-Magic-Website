@@ -124,12 +124,6 @@ a:hover {
     align-items: center;
 }
 
-header {
-    font-weight: 500;
-    padding: 0 var(--global-left-right-padding);
-    padding-bottom: var(--section-gap);
-}
-
 li,
 a {
     text-decoration: none;
@@ -160,9 +154,19 @@ nav {
     font-size: 20px;
 }
 
+header {
+    font-weight: 500;
+    padding: 0 var(--global-left-right-padding);
+    padding-bottom: var(--section-gap);
+}
+
 section .row {
     padding: 0 var(--global-left-right-padding);
     padding-bottom: var(--section-gap);
+}
+
+.website-title {
+    text-align: center;
 }
 
 .title-bar {
